@@ -2,14 +2,14 @@ import React from "react";
 import "./Video.css";
 
 const Video: React.FC = () => {
-  return (
+
+return (
     <div className="video-container">
       <iframe
         width="560"
         height="315"
-        src="YOUR_VIDEO_LINK_HERE"
+        src="https://www.youtube.com/embed/dmIsvmaGwc8"
         title="Music Video"
-        frameBorder="0"
         allowFullScreen
       ></iframe>
     </div>

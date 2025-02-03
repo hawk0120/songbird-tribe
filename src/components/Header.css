@@ -1,5 +1,9 @@
 .header {
+  position: fixed; /* Sticks it to the viewport */
+  top: 0;           /* Aligns to the top */
+  left: 0;          /* Aligns to the left */
   font-size: 2.5rem;
   text-transform: uppercase;
+  padding: 10px;           /* Optional: adds space around the text */
+  z-index: 1000;           /* Keeps it above other elements */
 }
-

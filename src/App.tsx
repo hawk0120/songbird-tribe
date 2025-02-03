@@ -10,12 +10,14 @@ function App() {
   const [showPricing, setShowPricing] = useState(false);
 
   return (
-    <div className="container">
+    <div>
       <Header />
-      <Video />
-      <Text />
-      <Buttons onPricingClick={() => setShowPricing(true)} />
-      {showPricing && <PricingModal onClose={() => setShowPricing(false)} />}
+      <div className="container">
+        <Video />
+        <Text />
+        <Buttons onPricingClick={() => setShowPricing(true)} />
+        {showPricing && <PricingModal onMouseEnter={() => setShowPricing(false)} />}
+      </div>
     </div>
   );
 }
