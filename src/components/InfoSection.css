@@ -1,0 +1,22 @@
+.hover-container {
+  min-height: 100px;
+  min-width: 100px;
+	margin: 20px ;
+  flex-direction: column;
+  align-items: left; 
+	white-space: pre-line;
+}
+
+.hover-trigger {
+  cursor: pointer;
+}
+
+.hidden-section {
+  display: none;
+  margin-top: 5px;
+}
+
+.hover-container:hover .hidden-section {
+  display: block;
+}
+

@@ -2,8 +2,11 @@ import React from "react";
 import "./Header.css";
 
 const Header: React.FC = () => {
-  return <h1 className="header">A SONGBIRD TRIBE</h1>;
+  return (
+    <div>
+      <h1 className="header">A Songbird Tribe</h1>;
+    </div>
+  );
 };
 
 export default Header;
-

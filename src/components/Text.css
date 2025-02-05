@@ -1,8 +1,23 @@
 .text {
+  flex-direction: column; 
   font-size: 1.2rem;
-  width: 80%;
-  margin: 20px auto;
+	align-text: left;
+	margin: 20px auto;
   line-height: 1.5;
   font-family: "Source Sans Pro", sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  pointer: cursor;
+
 }
 
+.hidden-section-text {
+  display: none;
+	margin-top: 5px;
+}
+
+.text:hover .hidden-section-text {
+  display: block;
+
+	margin-top: 5px;
+}
