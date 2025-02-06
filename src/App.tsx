@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Header from "./components/Header";
 import Video from "./components/Video";
 import Text from "./components/Text";
@@ -6,7 +5,6 @@ import InfoSection from "./components/InfoSection";
 import "./App.css";
 
 function App() {
-  const [showPricing, setShowPricing] = useState(false);
   const pricingDetails = `Lesprijs privé per les
 																20 min\t18 euro
 																30 min\t23 euro
