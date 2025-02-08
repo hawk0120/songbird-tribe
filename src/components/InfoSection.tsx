@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./InfoSection.css";
 
 type InfoSectionProps = {
@@ -7,12 +7,23 @@ type InfoSectionProps = {
 }
 
 const InfoSection: React.FC<InfoSectionProps> = ({title, details}) => {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleVisibility = () => {
+    setIsActive(!isActive);
+  };
+
   return (
-    <div className="hover-container">
-      <p className="hover-trigger">{title}</p>
-      <p className="hidden-section">{details}</p>
+    <div
+      className={`hover-container ${isActive ? "active" : ""}`}
+      onClick={toggleVisibility} // Handles mobile tap
+    >
+      <div className="hover-trigger">{title}</div>
+      <div className={`hidden-section ${isActive ? "visible" : ""}`}>
+        {details}
+      </div>
     </div>
-  );
+	)
 };
 
 export default InfoSection;

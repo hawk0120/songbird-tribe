@@ -1,23 +1,21 @@
-.text {
-  flex-direction: column; 
+.text-component-container {
   font-size: 1.2rem;
-	align-text: left;
-	margin: 20px auto;
+  text-align: left;
+  margin: 20px auto;
   line-height: 1.5;
   font-family: "Source Sans Pro", sans-serif;
-  padding-left: 20px;
-  padding-right: 20px;
-  pointer: cursor;
-
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 10px;
 }
 
-.hidden-section-text {
-  display: none;
-	margin-top: 5px;
+.text-component-container:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
-.text:hover .hidden-section-text {
+.contact-details {
   display: block;
-
-	margin-top: 5px;
+  margin-top: 10px;
+  font-weight: bold;
 }
