@@ -2,39 +2,47 @@ body {
   background: url("./assets/meadow.jpg") no-repeat center center fixed;
   background-size: cover;
   color: black;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  margin: 60px; 
-	display: flex;
+  margin: 0; /* Remove excess margin */
+  padding: 20px;
+  display: flex;
+
+  display: flex;
+  justify-content: row;
+  align-items: flex-start;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center; /* Center content vertically */
   align-items: center;
-  min-height: 80vh; 
-  max-width: 50%;
+  min-height: 100vh; /* Fit within viewport */
+  max-width: 850px;
+  box-sizing: border-box; /* Ensure padding doesn’t add extra size */
 }
 
+/* Ensures text alignment is correct */
 .text-container {
-	display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-	align-items: left;
+  align-items: flex-start;
   border-radius: 15px;
-	background-color: rgba(255, 255, 255, 0.8);
-	width: 100%;
-  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  box-sizing: border-box;
 }
 
-/* Mobile adjustments */
-@media (max-width: 800px) {
+
+ @media only screen and (max-width: 800px) {
   .container {
-    margin: 20px;
-    min-height: auto;
-    max-width: 100%;
+    padding: 10px;
+    min-height: auto; /* Allow it to shrink naturally */
+    max-width: 95%; /* Prevent too much width restriction */
   }
 
   .text-container {
-    margin: 10px;
-    padding: 10px;
-  }
-}
+    padding: 20px;
+    width: 100%;
+  } }

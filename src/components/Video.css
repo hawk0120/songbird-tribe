@@ -1,14 +1,30 @@
 .video-container {
-  margin: 0	;
+  margin: 10px;
   padding: 0;
   overflow: hidden; 
-  border-radius: 15px; /* Adjust the value for more or less rounding */
- 
-} 
+  border-radius: 15px; /* Adjust for desired rounding */
+  min-height: 200px;
+	display: flex;
+  justify-content: center; /* Center the video */
+  align-items: center;
+  position: relative;
+}
 
 .video-container iframe {
   border: none;
-  border-radius: 15px; /* Adjust the value for more or less rounding */
+  border-radius: 15px;
+	min-height: 200px;
 }
 
+/* Mobile adjustments */
+@media (max-width: 800px) {
+  .video-container {
+    margin: 5px; /* Reduce margin on smaller screens */
+    min-height: 180px; /* Slightly smaller min height */
+    width: 100%; /* Ensure it stretches properly */
+  }
 
+  .video-container iframe {
+    min-height: 180px; /* Match the container */
+  }
+}
