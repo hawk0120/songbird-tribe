@@ -17,7 +17,6 @@ Lesprijzen voor groepen vanaf 3 personen afhankelijk van de situatie. Zeker ook 
 
 Facturen worden begin van de maand verstuurd voor de betreffende lessen in de maand, exclusief vakanties. Bij afwezigheid (van beide kanten) wordt de les ingehaald op een ander moment mits het minstens 24 uur vantevoren is gecommuniceerd.`;
 
-
   return (
     <div>
       <Header />
@@ -25,10 +24,7 @@ Facturen worden begin van de maand verstuurd voor de betreffende lessen in de ma
         <div className="text-container">
           <Text />
 
-            <InfoSection
-              title="Prijzen"
-              details={pricingDetails}
-            />
+          <InfoSection title="Prijzen" details={pricingDetails} />
         </div>
 
         <Video />

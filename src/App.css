@@ -31,16 +31,17 @@ body {
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 40px;
+	margin: 50px;
   box-sizing: border-box;
 }
 
 
  @media only screen and (max-width: 800px) {
   .container {
-    padding: 10px;
+    padding: 20px;
     min-height: auto; /* Allow it to shrink naturally */
     max-width: 95%; /* Prevent too much width restriction */
-  }
+}
 
   .text-container {
     padding: 20px;
