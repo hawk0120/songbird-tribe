@@ -31,8 +31,9 @@ const Text: React.FC = () => {
         stuurt hierbij en coacht ze verder. Een paar kernwaarden in haar lessen:
         ontdekken en authenticiteit.
       </p>
-      <p className="text-component-underline">
-        Bel of email Merel direct voor vragen of om een 30 minuten proefles
+      <p>
+        <u>Bel of email</u> Merel direct voor vragen of om een 30 minuten proefles
+				underline: true;
         (€10,-) te boeken.
       </p>
       {isActive && <p className="contact-details">{contactDetails}</p>}

@@ -2,6 +2,8 @@ import Header from "./components/Header";
 import Video from "./components/Video";
 import Text from "./components/Text";
 import InfoSection from "./components/InfoSection";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./App.css";
 
 function App() {
@@ -23,7 +25,12 @@ Facturen worden begin van de maand verstuurd voor de betreffende lessen in de ma
       <div className="container">
         <div className="text-container">
           <Text />
-
+          <div className="social-media">
+            <FontAwesomeIcon icon={faInstagram} />
+            <a href="https://www.instagram.com/asongbirdtribe/">
+              @asongbirdtribe
+            </a>
+          </div>
           <InfoSection title="Prijzen" details={pricingDetails} />
         </div>
 

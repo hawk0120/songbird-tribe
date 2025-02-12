@@ -18,7 +18,7 @@ const InfoSection: React.FC<InfoSectionProps> = ({title, details}) => {
       className={`hover-container ${isActive ? "active" : ""}`}
       onClick={toggleVisibility} 
     >
-      <div className="hover-trigger">{title}</div>
+      <div className="hover-trigger"><u>{title}</u></div>
       <div className={`hidden-section ${isActive ? "visible" : ""}`}>
         {details}
       </div>
