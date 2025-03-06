@@ -4,7 +4,7 @@ import "./Text.css";
 const Text: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
   const contactDetails = `Telefoon: +31 06 23506554 
-													Email: merelvdwielen@gmail.com`;
+													Email: songbirdtibe@gmail.com`;
 
   const toggleVisibility = () => {
     setIsActive(!isActive);
@@ -33,7 +33,6 @@ const Text: React.FC = () => {
       </p>
       <p>
         <u>Bel of email</u> Merel direct voor vragen of om een 30 minuten proefles
-				underline: true;
         (€10,-) te boeken.
       </p>
       {isActive && <p className="contact-details">{contactDetails}</p>}

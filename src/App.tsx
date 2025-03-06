@@ -5,6 +5,7 @@ import InfoSection from "./components/InfoSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./App.css";
+import "./fonts.css";
 
 function App() {
   const pricingDetails = `Lesprijs privé per les
