@@ -4,7 +4,7 @@ import "./Text.css";
 const Text: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
   const contactDetails = `Telefoon: +31 06 23506554 
-													Email: songbirdtibe@gmail.com`;
+													Email: songbirdtribe@gmail.com`;
 
   const toggleVisibility = () => {
     setIsActive(!isActive);
