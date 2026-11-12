@@ -1,5 +1,5 @@
 body {
-  background: url("./assets/meadow.jpg") no-repeat center center fixed;
+  background: #8997a6 url("./assets/meadow.jpg") no-repeat center center fixed;
   background-size: cover;
   color: black;
   margin: 0;
@@ -12,9 +12,10 @@ body {
   font-size: 1em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
+  padding-top: 40px;
   max-width: 850px;
   box-sizing: border-box;
 }
