@@ -1,25 +1,22 @@
 body {
   background: url("./assets/meadow.jpg") no-repeat center center fixed;
   background-size: cover;
-	color: black;
+  color: black;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  margin: 0; /* Remove excess margin */
+  margin: 0;
   padding: 20px;
-	font-size: 1em;
+  font-size: 1em;
   display: flex;
-  display: flex;
-  justify-content: row;
-  align-items: flex-start;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
+  justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Fit within viewport */
+  min-height: 100vh;
   max-width: 850px;
-  box-sizing: border-box; /* Ensure padding doesn’t add extra size */
+  box-sizing: border-box;
 }
 
 /* Ensures text alignment is correct */
@@ -31,7 +28,7 @@ body {
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 40px;
-	margin: 50px;
+  margin: 50px;
   box-sizing: border-box;
 }
 
@@ -39,23 +36,23 @@ body {
   display: flex;
   align-items: center;
   padding-bottom: 10px;
-	gap: 8px; 
+  gap: 8px;
   color: black;
 }
 
 .social-media a {
-	color: inherit;
+  color: inherit;
 }
 
-
- @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .container {
     padding: 20px;
-    min-height: auto; /* Allow it to shrink naturally */
-    max-width: 95%; /* Prevent too much width restriction */
-}
+    min-height: auto;
+    max-width: 95%;
+  }
 
   .text-container {
     padding: 20px;
     width: 100%;
-  } }
+  }
+}
