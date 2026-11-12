@@ -9,13 +9,13 @@ import "./fonts.css";
 
 function App() {
   const pricingDetails = `Lesprijs privé per les
-																20 min\t18 euro
-																30 min\t23 euro
+20 min - 18 euro
+30 min - 23 euro
 
-																Lesprijs duo per les per persoon
-																30 min\t15 euro
-																60 min\t30 euro
-														
+Lesprijs duo per les per persoon
+30 min - 15 euro
+60 min - 30 euro
+
 Lesprijzen voor groepen vanaf 3 personen afhankelijk van de situatie. Zeker ook mogelijk!
 
 Facturen worden begin van de maand verstuurd voor de betreffende lessen in de maand, exclusief vakanties. Bij afwezigheid (van beide kanten) wordt de les ingehaald op een ander moment mits het minstens 24 uur vantevoren is gecommuniceerd.`;

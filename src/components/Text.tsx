@@ -3,18 +3,15 @@ import "./Text.css";
 
 const Text: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
-  const contactDetails = `Telefoon: +31 06 23506554 
-													Email: songbirdtribe@gmail.com`;
+  const contactDetails = `Telefoon: +31 06 23506554
+Email: songbirdtribe@gmail.com`;
 
   const toggleVisibility = () => {
     setIsActive(!isActive);
   };
 
   return (
-    <div
-      className={`text-component-container ${isActive ? "active" : ""}`}
-      onClick={toggleVisibility}
-    >
+    <div className="text-component-container">
       <p>
         In de binnenstad van Middelburg kan je bij Merel gecoacht worden in
         zang, songwriting en akoestisch gitaar. Ze is afgestudeerd aan het
@@ -32,8 +29,11 @@ const Text: React.FC = () => {
         ontdekken en authenticiteit.
       </p>
       <p>
-        <u>Bel of email</u> Merel direct voor vragen of om een 30 minuten proefles
-        (€10,-) te boeken.
+        <span className="contact-toggle" onClick={toggleVisibility}>
+          <u>Bel of email</u>
+        </span>{" "}
+        Merel direct voor vragen of om een 30 minuten proefles (€10,-) te
+        boeken.
       </p>
       {isActive && <p className="contact-details">{contactDetails}</p>}
     </div>
